@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Options</title>
+      <link rel="stylesheet" type="text/css" href="options.css">
+      <style>
+         body: { padding: 10px; }
+      </style>
+
+   </head>
+   <body>
+      <script src="lib/jquery.js"></script>
+      <script src="lib/jscolor.js"></script>
+      <script src="options.js"></script>
+      <h1>Enterprise Self Service Servicifier</h1>
+      <font size="1">(Now with 25% more Service)</font>
+      <br><br>
+      <table>
+         <tbody>
+            <tr>
+               <td>
+                  <h2>General Options:</h2>
+                  <ul>
+                     <li>
+                        <input type="checkbox" id="term">
+                        Automatically choose term when prompted
+                     </li>
+                     <br>
+                     <br>
+                     <li>
+                        <input type="checkbox" id="school">
+                        Automatically choose UIUC when prompted
+                     </li>
+                     <br>
+                     <br>
+                     <li>
+                        <input type="checkbox" id="fafsa">
+                        Automatically accept the agreement when prompted
+                     </li>
+                     <br>
+                     <br>
+                     <li>
+                        <input type="checkbox" id="closedC">
+                        Show closed sections by default
+                     </li>
+                     <br>
+                     <br>
+                     <li>
+                        <input type="checkbox" id="clearArea">
+                        Clear CRN text area after successfuly transfering CRNs to the boxes
+                     </li>
+                     <br>
+                     <br>
+                     <li>
+                        <input type="checkbox" id="noWeekend">
+                        Remove Saturday and Sunday from weekly schedule
+                     </li>
+                  </ul>
+               </td>
+               <td>
+                  <h2>Course Section Coloring: </h2>
+                  <ul>
+                     <li>
+                        <input type="checkbox" id="shouldColor">
+                        Apply colors to course sections
+                     </li>
+                     <br>
+                     <li id="colorContainer">
+                        <ul>
+                           <li>
+                              <input type="checkbox" id="shouldColorClosed">
+                              Apply color to closed sections
+                           </li>
+                           <li class="color">
+                              <ul>
+                                 <br>
+                                 <li>
+                                    Color:
+                                    <input id="closedColor" class="jscolor" default="FF0000">
+                                    <button class="reset">Reset to Default</button>
+                                 </li>
+                              </ul>
+                           </li>
+                           <br>
+                           <li>
+                              <input type="checkbox" id="shouldColorOpen">
+                              Apply color to open sections
+                           </li>
+                           <li class="color">
+                              <ul>
+                                 <br>
+                                 <li>
+                                   Color:
+                                    <input id="openColor" class="jscolor" default="008200">
+                                    <button class="reset">Reset to Default</button>
+                                 </li>
+                              </ul>
+                           </li>
+                           <br>
+                           <li>
+                              <input type="checkbox" id="shouldColorReg">
+                              Apply color to registered sections
+                           </li>
+                           <li class="color">
+                              <ul>
+                                 <br>
+                                 <li>
+                                   Color:
+                                    <input id="regColor" class="jscolor" default="800080">
+                                    <button class="reset">Reset to Default</button>
+                                 </li>
+                              </ul>
+                           </li>
+                           <br>
+                           <li>
+                              <input type="checkbox" id="shouldColorSwitch">
+                              Apply color to sections you can switch into
+                           </li>
+                           <li class="color">
+                              <ul>
+                                 <br>
+                                 <li>
+                                    Color:
+                                    <input id="switchColor" class="jscolor" default="CCCC00">
+                                    <button class="reset">Reset to Default</button>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <button id="save">No changes to save</button>
+      <br>
+      <br>
+      <button id="resetAll">Reset Everything to Default</button>
+      <br>
+      <br>
+      <button id="resetTerm">Reset Saved Term - </button>
+      <br>
+      <br>
+   </body>
+</html>

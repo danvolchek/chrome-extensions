@@ -1,0 +1,3 @@
+Jscolor (http://jscolor.com/) is licensed under the GNU GPL license v3.
+HTML2Canvas (https://html2canvas.hertzen.com) is licensed under the MIT License.
+JQuery (https://jquery.org/) is licensed under the MIT License.

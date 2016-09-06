@@ -1,0 +1,46 @@
+{
+    "name": "Makes Self-Service Servicier",
+    "description": "Adds useful tools",
+    "version": "1",
+    "manifest_version": 2,
+    "permissions": [
+        "storage",
+        "https://courses.illinois.edu/search/schedule/*"
+    ],
+    "content_scripts": [{
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfcls.P_GetCrse", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwckgens.P_RegsGetCrse"],
+        "js": ["lib/jquery.js", "util.js", "class.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegAgreementLook", "https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegAgreementAdd"],
+        "js": ["lib/jquery.js", "agree.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfreg.P_AltPin", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfcls.p_sel_crse_search", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfreg.P_ChangeCrseOpt", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskcrse.P_CrseSchdDetl"],
+        "js": ["lib/jquery.js", "term.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfreg.P_AltPin"],
+        "js": ["lib/jquery.js", "adddrop.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfshd.P_CrseSchd*", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfshd.p_proc_crse_schd"],
+        "js": ["lib/jquery.js", "lib/html2canvas.js", "lib/canvas2image.js", "schedule.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwckgens.p_proc_term_date", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfcls.P_GetCrse", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwckcoms.P_Regs", "https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfcls.P_GetCrse_Advanced"],
+        "js": ["lib/jquery.js", "subject.js"]
+    }, {
+        "matches": ["https://apps.uillinois.edu/selfservice/"],
+        "js": ["lib/jquery.js", "school.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfreg.P_ChangeCrseOpt"],
+        "js": ["lib/jquery.js", "hours.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfshd.P_CrseSchdDetl"],
+        "js": ["lib/jquery.js", "detail.js"]
+    }, {
+        "matches": ["https://ui2web1.apps.uillinois.edu/BANPROD1/bwskcrse.P_CrseSchdDetl"],
+        "js": ["lib/jquery.js", "util.js", "concise.js"]
+    }],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true,
+        "open_in_tab": true
+    }
+}
