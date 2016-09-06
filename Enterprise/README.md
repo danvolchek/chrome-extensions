@@ -8,4 +8,4 @@ Adds useful features to UIUC's classic class registration system
 * Lets you download your schedule as a PNG from the weekly schedule menu
 
 
-Uses html2canvas and canvas2image to generate schedule image. Uses jscolor to customize color coding of class section types. Uses jQuery. 
+Uses [html2canvas](https://html2canvas.hertzen.com/) and [canvas2image](https://github.com/hongru/canvas2image) to generate schedule image. Uses jscolor to customize color coding of class section types. Uses jQuery. 
