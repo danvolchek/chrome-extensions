@@ -1,0 +1,9 @@
+{
+    "name": "Tabby",
+    "description": "Replaces new tab page",
+    "version": "1",
+    "manifest_version": 2,
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    }
+}

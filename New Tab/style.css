@@ -1,0 +1,91 @@
+html{
+    height: 99%;
+}
+
+body {
+     background-image: url("/imgs/img.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 99%;
+}
+#circles{
+	position: absolute;
+	right: 50px;
+	
+}
+.label{
+   opacity: 0;
+   text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+.circle {
+    width: 80px;
+    height: 80px;
+    content: url("/imgs/white.png");
+
+    opacity: .2;
+}
+#title{
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    font-size: 40px;
+    transform: translateX(-50%);
+}
+#d {
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#sites {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+table{
+	float: left;
+}
+
+#frog{
+ font-size: 15px;  
+}
+
+caption{
+    font-size: 30px;
+    color: white;
+    /*margin-bottom: 50px;*/
+}
+span{
+	font-size: 30px;
+	color: white;
+}
+.tlabel{
+    text-align:right;
+    width:100px;
+}
+td:not(.tlabel){
+	text-align:center;
+}
+.circle{
+    cursor: pointer;
+}
+img:not(.circle){
+	width: 440px;
+	height: 200px;
+	margin: 5px 30px 5px 30px;
+	
+}
+
+#spacer{
+	height: 50px;
+}
