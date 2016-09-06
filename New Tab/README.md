@@ -7,4 +7,8 @@ Adds a fully customizable new tab page to replace the default one.
 * Has navigation circles that are clickable. You can also scroll through pages.
 * The background image and all the links are customizable
 
+# Examples
+
+![Example 1](http://i.imgur.com/nHpEI9D.png)
+![Example 2](http://i.imgur.com/wRBJcDc.png)
 Uses [jQuery](https://jquery.com/). 

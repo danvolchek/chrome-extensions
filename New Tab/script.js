@@ -207,6 +207,4 @@ $(function() {
 
     updateImages();
 
-    doFrog(5);
-
 });
