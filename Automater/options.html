@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Options</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+       <script src="lib/jquery.js"></script>
+      <script src="options.js"></script>
+   </head>
+   <body>
+      <h1>Automater</h1>
+      <font size="1">(Now with 25% more automation)</font>
+      <br><br>
+      <div id ="wrapper">
+      <div id="tasks" class="col">
+         <span class="title">View Tasks</span><br><br>
+      </div>
+      <div id="addTask" class="col">
+         <span class="title">Add a task:</span><br><br><br>
+         <span class="ask">URL: </span>
+         <input id="addURL" type="text"></input>
+         <br><br>
+         
+         <span class="ask">Number of actions:</span>
+         <input id="addActions" type="number" min="1" max="10" value="1"></input>
+         <br><br>
+
+         <div class="copy">
+         <span class="ask">Task #1</span><br><br>
+         <span class="ask">Type: </span>
+         <select class="addType">
+            <option value="click">Click</option>
+            <option value="val">Input Text</option>
+         </select>
+         <br><br>
+
+         <span class="ask">Selector: </span>
+         <input class="addSelector" type="text"></input>
+         <br><br>
+
+         <span class="ask">Which: </span>
+         <input class="addWhich" type="number" min="0" max="100" value="0"></input>
+         <br><br>
+         <div class="inputy">
+         <span class="ask">Value: </span>
+         <input type="text" class="addValue"></input>
+         <br><br>
+         </div>
+         </div>
+         <button id="save" class="col">Add this task</button>
+      </div>
+       
+       <div class="col">
+        <span class="title">Enable Automation</span><br><br>
+      <span>Enable automation: </span><input type = "checkbox" id = "enable"></input>
+      </div>
+
+      </div>
+
+      
+     
+   </body>
+</html>
